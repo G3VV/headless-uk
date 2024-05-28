@@ -3,6 +3,7 @@
 A headless [placeUK](https://github.com/g3vv/headless-uk) client written in [python](https://www.python.org/) 3.10.
 > Credit to [Headless-Henk](https://github.com/tintin10q/headless-henk) and PlaceNL
 
+
 # Simple Install
 
 1. Install Python 3.10 - https://www.python.org/downloads (**[direct download](https://www.python.org/ftp/python/3.10.10/python-3.10.10-amd64.exe)**)
@@ -15,6 +16,35 @@ A headless [placeUK](https://github.com/g3vv/headless-uk) client written in [pyt
 8. and you should be finished and the script should be running on your account!
 
 If you encounter any issues join our [Discord](https://discord.gg/ukplace) and ask for help in #script-help
+=======
+You can configure headless-uk with using a config [toml](https://toml.io/) file or using env vars.
+
+**You can place 1 account in this configuration. If you want to use multiple accounts in the same process you have to
+use an `accounts.toml`.**
+
+- You can configure the name of the `accounts.toml` with the `--accounts` flag.
+- You can configure the name of the `config.toml` with the `--config` flag.
+
+## Accounts Toml File
+
+The [accounts.toml](accounts.toml) file is very simple. It is just `username="password"` on every line. Like this:
+
+```toml
+username1 = "password1"
+username2 = "password2"
+username3 = "password3"
+```
+
+If you have weird characters in your username then this is also a valid accounts.toml:
+
+```toml
+"us.er.name1" = "password1"
+"us er name2" = "password2"
+username3 = "password3"
+```
+
+You can configure the name of the `accounts.toml` with the `--accounts` flag.
+
 
 ## Toml Config File
 

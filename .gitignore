@@ -1,11 +1,18 @@
 # Own added
 
+cache
+accounts.toml
 config
 config.toml
 canvas.png
 chieftemplate.png
 .venv
 reddit_session.json
+*.toml
+
+ratelimitreports/*.txt
+
+prioritymap.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
