@@ -11,7 +11,13 @@ import os
 
 from now import now
 
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+default_config_path = os.path.join(script_dir, 'config.toml')
+
 parser = argparse.ArgumentParser(description="Headless Henk", epilog=f"The headless {BOLD}placeNL{RESET} autoplacer writen in python.")
+parser.add_argument('--config', help="Location of the toml config file", default=default_config_path)
+=======
 parser.add_argument('--config', help="Location of the toml config file", default='config.toml')
 parser.add_argument('--accounts', help="Location of the toml accounts file", default='accounts.toml')
 parser.add_argument('--tokens_cache', help="Location of the toml tokens_cache file", default='tokens_cache.toml')

@@ -14,10 +14,9 @@ A headless [placeUK](https://github.com/g3vv/headless-uk) client written in [pyt
 7. Once `config.toml` is configured run `python index.py` again.
 8. and you should be finished and the script should be running on your account!
 
-If you encounter any issues join our [Discord](https://discord.gg/3vApPb6mxj) and ask for help in #script-support
+If you encounter any issues join our [Discord](https://discord.gg/ukplace) and ask for help in #script-help
 
 # Configuration
-
 You can configure headless-uk with using a config [toml](https://toml.io/) file or using env vars.
 
 **You can place 1 account in this configuration. If you want to use multiple accounts in the same process you have to
